@@ -3,15 +3,17 @@
 <html>
 <head>
     <title>Home View</title>
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-How are you, finally here at controller how are you <br>
+<div id="container">
+    How are you, finally here at controller how are you <br>
 
-Request: <%=request.getAttribute("name")%><br>
+    Request: <%=request.getAttribute("name")%><br>
 
-Request: (using Expression Language)  ${name}<br>
+    Request: (using Expression Language) ${name}<br>
 
-Request: (using JSTL prefix) <c:out value="${name}"></c:out> <br>
-
+    Request: (using JSTL prefix) <c:out value="${name}"></c:out> <br>
+</div>
 </body>
 </html>

@@ -20,7 +20,7 @@ public class OffersDAO {
     private NamedParameterJdbcTemplate jdbc;
 
     public OffersDAO() {
-        
+
     }
 
     @Autowired

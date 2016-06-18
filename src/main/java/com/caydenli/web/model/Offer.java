@@ -1,12 +1,17 @@
 package com.caydenli.web.model;
 
-/**
- * Created by Cayden on 16/6/18.
- */
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+
 public class Offer {
     private int id;
+
+    @Size(min = 5,max = 100, message = "Name cannot less than 5 and over 100 character size")
     private String name;
+    @NotNull
     private  String email;
+    @NotNull
     private String text;
 
     public Offer(){
@@ -57,5 +62,10 @@ public class Offer {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    @Override
+    public String toString() {
+        return "Offer name: " + getName() + " email " + getEmail() + " text " + getText();
     }
 }

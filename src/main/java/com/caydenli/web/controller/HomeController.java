@@ -5,10 +5,15 @@ import com.caydenli.web.service.OffersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +26,37 @@ public class HomeController {
     @Autowired
     public void setOffersService(OffersService offersService) {
         this.offersService = offersService;
+    }
+
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String showTest(Model model, @RequestParam("id") String id){
+        System.out.println("Id is : " + id);
+        return "test";
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    public String showCreate(Model model){
+        model.addAttribute("offer",new Offer());
+        return "create";
+    }
+
+    //Following method shows when there are a validation error occurs
+    @RequestMapping(value = "/createsuccess", method = RequestMethod.POST)
+    public String doValidate(Model model, @Valid Offer offer, BindingResult result){
+        if (result.hasErrors()){
+            System.out.println("Form does not pass validation");
+            List<ObjectError> errors = result.getAllErrors();
+            for (ObjectError error :
+                    errors) {
+                System.out.println(error.getDefaultMessage());
+            }
+            return "create";
+        }else{
+            System.out.println("Form is validated");
+            return "createsuccess";
+        }
+
     }
 
     @RequestMapping("/home")

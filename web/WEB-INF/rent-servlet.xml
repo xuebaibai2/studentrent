@@ -24,5 +24,8 @@
 
     </bean>
 
+    <!--Map static resource to the page like css and javascript-->
+    <mvc:resources mapping="/static/**" location="/www/resource/"></mvc:resources>
+
 
 </beans>
