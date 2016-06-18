@@ -13,9 +13,10 @@
 </head>
 <body>
 <sf:form method="post" action="/createsuccess" commandName="offer">
-    Name: <sf:input path="name"></sf:input> <br>
+    Name: <sf:input path="name"></sf:input> &nbsp;&nbsp; <sf:errors path="name" cssStyle="color: red;"></sf:errors> <br>
     Mail: <sf:input path="email"></sf:input> <br>
     Text: <sf:textarea path="text" ></sf:textarea> <br>
+
     <input type="submit" value="Create"/>
 </sf:form>
 </body>

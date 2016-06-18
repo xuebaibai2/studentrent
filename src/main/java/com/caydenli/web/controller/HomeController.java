@@ -45,18 +45,14 @@ public class HomeController {
     @RequestMapping(value = "/createsuccess", method = RequestMethod.POST)
     public String doValidate(Model model, @Valid Offer offer, BindingResult result){
         if (result.hasErrors()){
-            System.out.println("Form does not pass validation");
-            List<ObjectError> errors = result.getAllErrors();
-            for (ObjectError error :
-                    errors) {
-                System.out.println(error.getDefaultMessage());
-            }
             return "create";
-        }else{
-            System.out.println("Form is validated");
-            return "createsuccess";
         }
+            return "createsuccess";
+    }
 
+    @RequestMapping(value = "/createsuccess", method = RequestMethod.GET)
+    public String doValidate(){
+        return "redirect:home";
     }
 
     @RequestMapping("/home")

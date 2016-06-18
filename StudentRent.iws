@@ -6,19 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85b59c3b-21d5-43f0-bcc4-3d49e1c2855b" name="Default" comment="Update Input validation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/jsps/create.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/jsps/createsuccess.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/resource/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.iml" afterPath="$PROJECT_DIR$/StudentRent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.ipr" afterPath="$PROJECT_DIR$/StudentRent.ipr" />
+    <list default="true" id="85b59c3b-21d5-43f0-bcc4-3d49e1c2855b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.iws" afterPath="$PROJECT_DIR$/StudentRent.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/OffersDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/OffersDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/www/jsps/home.jsp" afterPath="$PROJECT_DIR$/web/www/jsps/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/www/jsps/create.jsp" afterPath="$PROJECT_DIR$/web/www/jsps/create.jsp" />
     </list>
     <ignored path="StudentRent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,12 +65,14 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+            <state relative-caret-position="225">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#895#896#0" expanded="true" />
                 <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#1801#1802#0" expanded="true" />
+                <element signature="e#1839#1840#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,31 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/www/resource/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rent-servlet.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rent-servlet.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -199,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/OffersDAO.java" />
         <option value="$PROJECT_DIR$/web/www/css/main.css" />
         <option value="$PROJECT_DIR$/web/www/jsps/home.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/www/jsps/createsuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/web/www/jsps/create.jsp" />
       </list>
     </option>
@@ -1344,7 +1328,7 @@
       <option name="presentableId" value="Default" />
       <updated>1466166562142</updated>
       <workItem from="1466166563557" duration="22077000" />
-      <workItem from="1466241575313" duration="9238000" />
+      <workItem from="1466241575313" duration="12340000" />
     </task>
     <task id="LOCAL-00001" summary="Separated Controller DAO Model Service Layer as well as daoContext and service Context">
       <created>1466243308010</created>
@@ -1353,11 +1337,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466243308010</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update Input validation">
+      <created>1466253834341</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1466253834341</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31315000" />
+    <option name="totallyTimeSpent" value="34417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="796" extended-state="6" />
@@ -1377,12 +1368,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27372766" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27372766" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28060523" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28060523" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22578125" sideWeight="0.48674244" order="5" side_tool="false" content_ui="combo" />
@@ -1580,14 +1571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/resource/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1596,42 +1579,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/createsuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/www/jsps/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/resource/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1648,10 +1607,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/createsuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1659,7 +1630,29 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1839#1840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
