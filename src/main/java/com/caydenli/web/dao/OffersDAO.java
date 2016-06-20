@@ -1,9 +1,12 @@
 package com.caydenli.web.dao;
 
 import com.caydenli.web.model.Offer;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
@@ -44,4 +47,16 @@ public class OffersDAO {
             }
         });
     }
+
+
+//    private SessionFactory sessionFactory;
+//
+//    public Session session(){
+//        return sessionFactory.getCurrentSession();
+//    }
+//
+//    public List<Offer> getTest(){
+//        return session().createQuery("from com.caydenli.web.model.Offer").list();
+//    }
+
 }
