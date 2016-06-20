@@ -15,7 +15,7 @@
 </head>
 <body onload='document.f.username.focus();'>
 <div class="container">
-    <h3>Login with Username and Password</h3>
+    <h3 class="text-center">User Login</h3>
 
     <c:if test="${param.error != null}">
         <span class="text-danger">Login failed, username or password is not correct</span>
@@ -32,6 +32,8 @@
         <br>
         <input class="form-control btn btn-primary" name="submit" type="submit" value="Login"/>
     </form>
+    <p><a class="btn btn-success" href="/account/createaccount">Create new account</a></p>
 </div>
+
 </body>
 </html>

@@ -24,6 +24,12 @@
 
     </bean>
 
+    <!--Add external validation message properties-->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="validation_msg"></property>
+    </bean>
+
+
     <!--Map static resource to the page like css and javascript-->
     <mvc:resources mapping="/static/**" location="/www/resource/"></mvc:resources>
 

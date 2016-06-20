@@ -1,26 +1,55 @@
 package com.caydenli.web.model;
 
-import com.caydenli.web.utility.GROUP;
 
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Cayden on 16/6/20.
- */
+
 public class Account {
     private int id;
+    @NotBlank
+    @Size(min = 4, max = 20)
+    @Pattern(regexp = "^\\w{4,}$")
     private String username;
+
+    @NotBlank
+    @Size(min = 3)
+    @Pattern(regexp = "^\\S+$")
     private String password;
     private String firstName;
     private String lastName;
+
+    @NotBlank
+    @Email
     private String Email;
     private String phonenumber;
+    @Pattern(regexp = "\\b(male|female)\\b")
     private String gender;
-    private GROUP groupname;
+    private String authority;
+
+    public String getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(String authority) {
+        this.authority = authority;
+    }
+
+    private boolean enabled = false;
+
+    public Account() {
+    }
+
+    //    private GROUP groupname;
     private List<Post> posts = new ArrayList<Post>();
 
-    public Account(String username, String password, String firstName, String lastName, String email, String phonenumber, String gender, GROUP groupname) {
+    public Account(String username, String password, String firstName, String lastName, String email, String phonenumber, String gender) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -28,7 +57,7 @@ public class Account {
         Email = email;
         this.phonenumber = phonenumber;
         this.gender = gender;
-        this.groupname = groupname;
+//        this.groupname = groupname;
     }
 
     public List<Subscription> getSubscription() {
@@ -47,13 +76,13 @@ public class Account {
         this.posts = posts;
     }
 
-    public GROUP getGroupname() {
-        return groupname;
-    }
-
-    public void setGroupname(GROUP groupname) {
-        this.groupname = groupname;
-    }
+//    public GROUP getGroupname() {
+//        return groupname;
+//    }
+//
+//    public void setGroupname(GROUP groupname) {
+//        this.groupname = groupname;
+//    }
 
     public String getGender() {
         return gender;
@@ -109,6 +138,14 @@ public class Account {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
     public int getId() {
