@@ -18,9 +18,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Cayden on 16/6/20.
- */
 @Component("accountDao")
 public class AccountsDAO {
     private NamedParameterJdbcTemplate jdbc;

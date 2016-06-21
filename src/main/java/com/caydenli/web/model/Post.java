@@ -4,9 +4,7 @@ import com.caydenli.web.utility.POSTTYPE;
 
 import java.util.Date;
 
-/**
- * Created by Cayden on 16/6/20.
- */
+
 public class Post {
     private int id;
     private Account user;
@@ -16,6 +14,9 @@ public class Post {
     private String email;
     private Date postdate;
     private boolean issticky;
+
+    public Post() {
+    }
 
     public Post(Account user, POSTTYPE posttype, String subject, String content, String email, Date postdate, boolean issticky) {
 

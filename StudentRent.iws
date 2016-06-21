@@ -6,22 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85b59c3b-21d5-43f0-bcc4-3d49e1c2855b" name="Default" comment="Output text based on authentication status&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/jsps/admin/adminhome.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/jsps/logout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.iml" afterPath="$PROJECT_DIR$/StudentRent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.ipr" afterPath="$PROJECT_DIR$/StudentRent.ipr" />
+    <list default="true" id="85b59c3b-21d5-43f0-bcc4-3d49e1c2855b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/PostController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/PostsDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/PostsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/www/jsps/post/create.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/LoginController.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentRent.iws" afterPath="$PROJECT_DIR$/StudentRent.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AccountController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/securityContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/securityContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/validation_msg.properties" afterPath="$PROJECT_DIR$/src/main/resources/validation_msg.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/www/jsps/home.jsp" afterPath="$PROJECT_DIR$/web/www/jsps/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/www/jsps/login.jsp" afterPath="$PROJECT_DIR$/web/www/jsps/login.jsp" />
     </list>
     <ignored path="StudentRent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,127 +39,190 @@
     <favorites_list name="StudentRent" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/www/jsps/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminhome.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/www/jsps/admin/adminhome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/www/jsps/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-              <folding>
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountsDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1466479585000" expanded="true" signature="1356:1486" ph="insert into accounts... " />
-                <marker date="1466479585000" expanded="true" signature="1561:1611" ph="select id fr... accounts" />
-                <marker date="1466479585000" expanded="true" signature="1770:1812" ph="insert into authorities... " />
-                <marker date="1466479585000" expanded="true" signature="1770:1842" ph="insert into authorities... " />
-                <marker date="1466479585000" expanded="true" signature="1970:2026" ph="select count... accounts" />
-                <marker date="1466479585000" expanded="true" signature="2222:2272" ph="select count... accounts" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.60514235">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="create.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/www/jsps/post/create.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/PostController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#678#679#0" expanded="true" />
+                    <element signature="e#726#727#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostsService.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/PostsService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#430#431#0" expanded="true" />
+                    <element signature="e#470#471#0" expanded="true" />
+                    <element signature="e#555#556#0" expanded="true" />
+                    <element signature="e#603#604#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="securityContext.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/securityContext.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="106">
+                  <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
+                  <folding>
+                    <marker date="1466487695000" expanded="true" signature="744:816" ph="SELECT usern... accounts" />
+                    <marker date="1466487695000" expanded="true" signature="870:935" ph="select usern... userauth" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostsDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/PostsDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#620#621#0" expanded="true" />
+                    <element signature="e#684#685#0" expanded="true" />
+                    <marker date="1466487276000" expanded="true" signature="868:988" ph="insert into posts... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="create.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AccountController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="61" column="15" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#905#906#0" expanded="true" />
+                    <element signature="e#936#937#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="createaccount.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/www/jsps/account/createaccount.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="294">
+                  <caret line="48" column="84" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="84" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#556#557#0" expanded="true" />
+                    <element signature="e#610#611#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AccountsService.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#480#481#0" expanded="true" />
+                    <element signature="e#526#527#0" expanded="true" />
+                    <element signature="e#571#572#0" expanded="true" />
+                    <element signature="e#623#624#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AccountsDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="56">
+                  <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1002#1003#0" expanded="true" />
+                    <element signature="e#1066#1067#0" expanded="true" />
+                    <marker date="1466487197000" expanded="true" signature="1315:1445" ph="insert into accounts... " />
+                    <marker date="1466487197000" expanded="true" signature="1520:1570" ph="select id fr... accounts" />
+                    <marker date="1466487197000" expanded="true" signature="1729:1771" ph="insert into authorities... " />
+                    <marker date="1466487197000" expanded="true" signature="1729:1801" ph="insert into authorities... " />
+                    <marker date="1466487197000" expanded="true" signature="1929:1985" ph="select count... accounts" />
+                    <marker date="1466487197000" expanded="true" signature="2181:2231" ph="select count... accounts" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -197,7 +255,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/Offer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/config/daoContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/daoContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/OffersService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/serviceContext.xml" />
         <option value="$PROJECT_DIR$/web/www/jsps/dao.jsp" />
         <option value="$PROJECT_DIR$/web/www/css/main.css" />
@@ -210,7 +267,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/utility/GROUP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/utility/POSTTYPE.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/utility/SERVICETYPE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Subscription.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/LoginController.java" />
@@ -230,11 +286,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/www/jsps/home.jsp" />
         <option value="$PROJECT_DIR$/web/www/jsps/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/securityContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java" />
         <option value="$PROJECT_DIR$/web/www/jsps/admin/adminhome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/OffersService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java" />
+        <option value="$PROJECT_DIR$/web/www/jsps/post/create.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/PostsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/securityContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caydenli/web/service/PostsService.java" />
       </list>
     </option>
   </component>
@@ -345,72 +407,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentRent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -446,6 +442,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -470,6 +470,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentRent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,7 +638,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="admin&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/admin/adminhome.jsp&#10;login.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;acc&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;accountd&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/dao/AccountsDAO.java&#10;account.java&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;home.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/home.jsp&#10;admin.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/admin/adminhome.jsp&#10;homecon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;controll&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/LoginController.java&#10;admincon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AdminController.java&#10;con&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;home&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/home.jsp&#10;pom&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml&#10;ad&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AdminController.java&#10;we&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/web.xml&#10;web&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/web.xml&#10;login&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;se&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;ser&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;secu&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;accountcon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;contro&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;prop&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/validation_msg.properties&#10;account&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;rent-&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;create&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/account/createaccount.jsp&#10;createa&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/account/createaccount.jsp&#10;logi&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;Account.java&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;account.ja&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;homeco&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;xml&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;daocon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/daoContext.xml&#10;sec&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;accou&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;log&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;context&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;po&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml&#10;daoco&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/daoContext.xml&#10;ho&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/home.xhtml&#10;p&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml&#10;offer&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Offer.java&#10;dao&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/dao/OffersDAO.java&#10;ren&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;web.&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/web.xml&#10;re&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;rent&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;jsf&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/JSFController.java" />
+    <property name="SearchEverywhereHistoryKey" value="se&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;sec&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;accountsd&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/dao/AccountsDAO.java&#10;accountser&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/service/AccountsService.java&#10;post.java&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Post.java&#10;accountcon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;create&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/account/createaccount.jsp&#10;post/crea&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/post/create.jsp&#10;home&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;accountdao&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/dao/AccountsDAO.java&#10;account&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/service/AccountsService.java&#10;offerser&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/service/OffersService.java&#10;postser&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/service/PostsService.java&#10;post&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/PostController.java&#10;homec&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;admin&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/admin/adminhome.jsp&#10;login.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;acc&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;accountd&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/dao/AccountsDAO.java&#10;account.java&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;home.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/home.jsp&#10;admin.js&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/admin/adminhome.jsp&#10;homecon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;controll&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/LoginController.java&#10;admincon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AdminController.java&#10;con&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;pom&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml&#10;ad&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AdminController.java&#10;we&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/web.xml&#10;web&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/web.xml&#10;login&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;ser&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;secu&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;contro&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/AccountController.java&#10;prop&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/validation_msg.properties&#10;rent-&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/WEB-INF/rent-servlet.xml&#10;createa&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/account/createaccount.jsp&#10;logi&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;Account.java&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;account.ja&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;homeco&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/controller/HomeController.java&#10;xml&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;daocon&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/daoContext.xml&#10;accou&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/java/com/caydenli/web/model/Account.java&#10;log&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/www/jsps/login.jsp&#10;context&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/securityContext.xml&#10;po&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml&#10;daoco&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/src/main/resources/daoContext.xml&#10;ho&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/web/home.xhtml&#10;p&#9;FILE&#9;file:///Users/Cayden/Documents/Java/StudentRent/pom.xml" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
@@ -1332,7 +1422,7 @@
       <option name="presentableId" value="Default" />
       <updated>1466166562142</updated>
       <workItem from="1466166563557" duration="22077000" />
-      <workItem from="1466241575313" duration="65377000" />
+      <workItem from="1466241575313" duration="72323000" />
     </task>
     <task id="LOCAL-00001" summary="Separated Controller DAO Model Service Layer as well as daoContext and service Context">
       <created>1466243308010</created>
@@ -1369,11 +1459,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466441168694</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Output text based on authentication status&#10;">
+      <created>1466481068673</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1466481068673</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87454000" />
+    <option name="totallyTimeSpent" value="94400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="796" extended-state="0" />
@@ -1393,15 +1490,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43603852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.258597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34525448" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21182944" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23046875" sideWeight="0.7111417" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14921875" sideWeight="0.7111417" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22578125" sideWeight="0.28885832" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1429,18 +1526,18 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1292985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.258597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34525448" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17881706" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23046875" sideWeight="0.7111417" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171875" sideWeight="0.7111417" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22578125" sideWeight="0.28885832" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1469,15 +1566,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1486,38 +1575,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.5.RELEASE/spring-jdbc-4.2.5.RELEASE-sources.jar!/org/springframework/jdbc/core/RowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/dao.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/resource/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/www/jsps/createsuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1541,14 +1598,6 @@
           <folding>
             <element signature="docComment;class#Filter#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/filter/DelegatingFilterProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,25 +1701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-          <folding>
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#616#617#0" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-            <element signature="e#688#689#0" expanded="false" />
-            <element signature="e#720#721#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#806#807#0" expanded="false" />
-            <element signature="e#874#875#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Subscription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1701,64 +1731,6 @@
             <element signature="e#1392#1393#0" expanded="false" />
             <element signature="e#1434#1435#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/daoContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/serviceContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,48 +1770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/OffersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/www/jsps/welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/OffersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1852,26 +1786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/account/createaccount.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/www/resource/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1892,25 +1810,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/securityContext.xml">
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+        <state relative-caret-position="-105">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/admin/adminhome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/daoContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/serviceContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <marker date="1466478538000" expanded="true" signature="744:809" ph="SELECT usern... accounts" />
-            <marker date="1466478538000" expanded="true" signature="863:921" ph="select usern... userauth" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AccountController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/rent-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/filter/DelegatingFilterProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Offer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1923,73 +1910,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/OffersService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/OffersDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="77" />
+        <state relative-caret-position="176">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1466479585000" expanded="true" signature="1356:1486" ph="insert into accounts... " />
-            <marker date="1466479585000" expanded="true" signature="1561:1611" ph="select id fr... accounts" />
-            <marker date="1466479585000" expanded="true" signature="1770:1812" ph="insert into authorities... " />
-            <marker date="1466479585000" expanded="true" signature="1770:1842" ph="insert into authorities... " />
-            <marker date="1466479585000" expanded="true" signature="1970:2026" ph="select count... accounts" />
-            <marker date="1466479585000" expanded="true" signature="2222:2272" ph="select count... accounts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#556#557#0" expanded="true" />
@@ -1998,19 +1940,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/www/jsps/admin/adminhome.jsp">
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/create.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/account/createaccount.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="294">
+          <caret line="48" column="84" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="84" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/model/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="61" column="15" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/PostsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <marker date="1466487276000" expanded="true" signature="868:988" ph="insert into posts... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/dao/AccountsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <marker date="1466487197000" expanded="true" signature="1315:1445" ph="insert into accounts... " />
+            <marker date="1466487197000" expanded="true" signature="1520:1570" ph="select id fr... accounts" />
+            <marker date="1466487197000" expanded="true" signature="1729:1771" ph="insert into authorities... " />
+            <marker date="1466487197000" expanded="true" signature="1729:1801" ph="insert into authorities... " />
+            <marker date="1466487197000" expanded="true" signature="1929:1985" ph="select count... accounts" />
+            <marker date="1466487197000" expanded="true" signature="2181:2231" ph="select count... accounts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/www/jsps/post/create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/AccountsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/securityContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
+          <folding>
+            <marker date="1466487695000" expanded="true" signature="744:816" ph="SELECT usern... accounts" />
+            <marker date="1466487695000" expanded="true" signature="870:935" ph="select usern... userauth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caydenli/web/service/PostsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
