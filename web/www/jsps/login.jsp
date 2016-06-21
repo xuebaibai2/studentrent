@@ -12,6 +12,9 @@
 <head>
     <title>Login Page</title>
     <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- default header name is X-CSRF-TOKEN -->
+    <%--<meta name="_csrf_header" content="${_csrf.headerName}"/>--%>
+
 </head>
 <body onload='document.f.username.focus();'>
 <div class="container">
@@ -21,7 +24,10 @@
         <span class="text-danger">Login failed, username or password is not correct</span>
     </c:if>
 
-    <form name='f' action='/login' method='POST'>
+    <c:url value="/login" var="loginUrl"/>
+
+    <%--<form name='f' action='/login' method='POST'>--%>
+    <form name='f' action=${loginUrl} method='POST'>
 
 
         <label for="username">User:</label>

@@ -13,11 +13,6 @@
     </filter-mapping>
 
 
-    <!--<context-param>-->
-        <!--<param-name>contextConfigLocation</param-name>-->
-        <!--<param-value>/WEB-INF/applicationContext.xml</param-value>-->
-    <!--</context-param>-->
-
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
@@ -39,6 +34,7 @@
     <servlet-mapping>
         <servlet-name>rent</servlet-name>
         <url-pattern>/</url-pattern>
+
     </servlet-mapping>
 
     <description>MySQL rentDB</description>

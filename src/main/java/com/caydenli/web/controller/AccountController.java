@@ -29,6 +29,11 @@ public class AccountController {
         return "login";
     }
 
+    @RequestMapping("/logout")
+    public String logout(){
+        return "logout";
+    }
+
     @RequestMapping(value = "/account/createaccount", method = RequestMethod.GET)
     public String register(Model model){
         model.addAttribute("account", new Account());

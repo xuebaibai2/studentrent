@@ -5,6 +5,8 @@ import com.caydenli.web.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by Cayden on 16/6/20.
  */
@@ -27,5 +29,9 @@ public class AccountsService {
 
     public boolean emailExist(String email) {
         return  accountsDAO.userEmailExist(email);
+    }
+
+    public List<Account> getAllAccounts() {
+        return accountsDAO.getAllUsers();
     }
 }

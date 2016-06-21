@@ -15,6 +15,7 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -62,5 +63,10 @@ public class AccountsDAO {
         return jdbc.queryForObject("select count(*) from accounts where email = :email",
                 new MapSqlParameterSource("email",email),
                 Integer.class) > 0;
+    }
+
+    public List<Account> getAllUsers() {
+        return jdbc.query("select * from accounts left join userauth on accounts.username = userauth.username",
+                BeanPropertyRowMapper.newInstance(Account.class));
     }
 }
