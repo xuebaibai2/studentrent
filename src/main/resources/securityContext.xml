@@ -11,11 +11,13 @@
     <security:authentication-manager>
         <security:authentication-provider>
             <security:jdbc-user-service
+                    id="jdbcUserService"
                     data-source-ref="dataSource"
                     role-prefix="ROLE_"
                     users-by-username-query="SELECT username,password,enabled from accounts where binary username = ?"
                     authorities-by-username-query=" select username,authority from userauth where binary username = ?"
             />
+            <security:password-encoder ref="passwordEncoder"/>
         </security:authentication-provider>
     </security:authentication-manager>
 
@@ -31,7 +33,7 @@
         <!--<security:intercept-url pattern="/admin/**" access="hasRole('admin')" />-->
 
         <security:intercept-url pattern="/" access="permitAll" />
-
+        <security:intercept-url pattern="/accessdenied" access="permitAll"/>
         <security:intercept-url pattern="/logout" access="permitAll" />
         <security:intercept-url pattern="/account/createaccount" access="permitAll" />
         <security:intercept-url pattern="/welcome" access="permitAll" />
@@ -41,9 +43,20 @@
 
         <security:intercept-url pattern="/home" access="permitAll" />
         <security:intercept-url pattern="/**" access="denyAll" />
+
+        <!--Access Denied Redirect Page-->
+        <security:access-denied-handler error-page="/denied"/>
+
+        <!--Configure Remember Me-->
+        <security:remember-me key="rentKey" user-service-ref="jdbcUserService"/>
+
         <security:csrf disabled="true" />
         <security:form-login login-page="/login" default-target-url="/home" authentication-failure-url="/login?error=true"/>
         <security:logout logout-url="/logout" invalidate-session="true" logout-success-url="/home" />
     </security:http>
 
+
+    <bean id="passwordEncoder" class="org.springframework.security.crypto.password.StandardPasswordEncoder">
+
+    </bean>
 </beans>

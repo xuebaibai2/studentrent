@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +23,9 @@ import java.util.Map;
 public class AccountsDAO {
     private NamedParameterJdbcTemplate jdbc;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     public AccountsDAO() {
     }
 
@@ -32,8 +36,13 @@ public class AccountsDAO {
 
     @Transactional
     public boolean register(Account account){
-        BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(account);
-        Map<String,String> param = new HashMap<String, String>();
+        MapSqlParameterSource params = new MapSqlParameterSource();
+
+        params.addValue("username", account.getUsername());
+        params.addValue("password", passwordEncoder.encode(account.getPassword()));
+        params.addValue("email", account.getEmail());
+        params.addValue("enabled", account.isEnabled());
+        params.addValue("authority",account.getAuthority());
 
         jdbc.update("insert into accounts (username, password, email, enabled) " +
                     "VALUES (:username, :password, :email, :enabled)",params);
@@ -41,13 +50,11 @@ public class AccountsDAO {
         Integer userId = jdbc.queryForObject(
                 "select id from accounts where username = :username",params,Integer.class);
 
-
-        param.put("userId",userId.toString());
-        param.put("authority",account.getAuthority());
+        params.addValue("userId",userId.toString());
 
 
         return jdbc.update("insert into authorities (userId, authority) values (:userId, :authority) ",
-                param) == 1;
+                params) == 1;
     }
 
     public boolean usernameExist(String username) {

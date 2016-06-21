@@ -35,6 +35,9 @@
 
         <label for="password">Password:</label>
         <input id="password" class="form-control" type='password' name='password'/>
+
+        <label for="rememberme">Remember Me:</label>
+        <input id="rememberme" class="checkbox" type='checkbox' name='remember-me'/>
         <br>
         <input class="form-control btn btn-primary" name="submit" type="submit" value="Login"/>
     </form>

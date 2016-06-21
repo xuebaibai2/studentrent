@@ -29,31 +29,35 @@ public class HomeController {
     }
 
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public String showTest(Model model, @RequestParam("id") String id){
-        System.out.println("Id is : " + id);
-        return "test";
+    @RequestMapping(value = "/accessdenied")
+    public String accessDenied(){
+        return "accessdenied";
     }
+//    @RequestMapping(value = "/test", method = RequestMethod.GET)
+//    public String showTest(Model model, @RequestParam("id") String id){
+//        System.out.println("Id is : " + id);
+//        return "test";
+//    }
 
-    @RequestMapping(value = "/create", method = RequestMethod.GET)
-    public String showCreate(Model model){
-        model.addAttribute("offer",new Offer());
-        return "create";
-    }
+//    @RequestMapping(value = "/create", method = RequestMethod.GET)
+//    public String showCreate(Model model){
+//        model.addAttribute("offer",new Offer());
+//        return "create";
+//    }
 
     //Following method shows when there are a validation error occurs
-    @RequestMapping(value = "/createsuccess", method = RequestMethod.POST)
-    public String doValidate(Model model, @Valid Offer offer, BindingResult result){
-        if (result.hasErrors()){
-            return "create";
-        }
-            return "createsuccess";
-    }
-
-    @RequestMapping(value = "/createsuccess", method = RequestMethod.GET)
-    public String doValidate(){
-        return "redirect:home";
-    }
+//    @RequestMapping(value = "/createsuccess", method = RequestMethod.POST)
+//    public String doValidate(Model model, @Valid Offer offer, BindingResult result){
+//        if (result.hasErrors()){
+//            return "create";
+//        }
+//            return "createsuccess";
+//    }
+//
+//    @RequestMapping(value = "/createsuccess", method = RequestMethod.GET)
+//    public String doValidate(){
+//        return "redirect:home";
+//    }
 
     @RequestMapping("/home")
     public String showHome(Model model){
@@ -66,11 +70,11 @@ public class HomeController {
         return "jndi";
     }
 
-    @RequestMapping("/dao")
-    public String showDAO(Model model){
-        List<Offer> offers =  offersService.getCurrent();
-        model.addAttribute("offers",offers);
-        return "dao";
-    }
+//    @RequestMapping("/dao")
+//    public String showDAO(Model model){
+//        List<Offer> offers =  offersService.getCurrent();
+//        model.addAttribute("offers",offers);
+//        return "dao";
+//    }
 
 }
