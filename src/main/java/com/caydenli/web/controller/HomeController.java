@@ -30,10 +30,14 @@ public class HomeController {
 
 
     @RequestMapping(value = "/")
-    public String home(){
+    public String index(){
         return "home";
     }
 
+    @RequestMapping(value = "/home")
+    public String home(){
+        return "home";
+    }
 
     @RequestMapping(value = "/accessdenied")
     public String accessDenied(){

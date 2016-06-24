@@ -58,7 +58,7 @@ public class AccountController {
         }
 
         if(accountsService.create(account)){
-            return "/welcome";
+            return "welcome";
         }else {
             return "/account/createaccount";
         }
@@ -69,7 +69,7 @@ public class AccountController {
 
     @RequestMapping("/welcome")
     public String register_welcome(){
-        return "/welcome";
+        return "welcome";
     }
 
 }

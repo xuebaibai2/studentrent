@@ -8,15 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<html>
-<head>
-    <title>Login Page</title>
-    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <!-- default header name is X-CSRF-TOKEN -->
-    <%--<meta name="_csrf_header" content="${_csrf.headerName}"/>--%>
 
-</head>
-<body onload='document.f.username.focus();'>
+
+<script type="text/javascript">
+    $(function () {
+        document.f.username.focus();
+    })
+</script>
 <div class="container">
     <h3 class="text-center">User Login</h3>
 
@@ -26,7 +24,6 @@
 
     <c:url value="/login" var="loginUrl"/>
 
-    <%--<form name='f' action='/login' method='POST'>--%>
     <form name='f' action=${loginUrl} method='POST'>
 
 
@@ -44,5 +41,3 @@
     <p><a class="btn btn-success" href="/account/createaccount">Create new account</a></p>
 </div>
 
-</body>
-</html>

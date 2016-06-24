@@ -29,8 +29,11 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/account/createaccount"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-
+            <sec:authorize access="!isAuthenticated()">
+                <li>
+                    <a href="/account/createaccount"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+            </sec:authorize>
             <sec:authorize access="!isAuthenticated()">
                 <li>
                     <a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
@@ -40,15 +43,14 @@
 
             <sec:authorize access="isAuthenticated()">
                 <li>
-                    <c:url var="logoutUrl" value="/logout"/>
-                    <form action="${logoutUrl}" method="post">
-                        <span class="glyphicon glyphicon-log-out"></span> <input type="submit" value="Log out"/>
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                    </form>
+                    <a href="javascript:document.forms['logout'].submit()">
+                        <span class="glyphicon glyphicon-log-out"></span> Log out</a>
                 </li>
             </sec:authorize>
 
         </ul>
-
+        <form name="logout" action="/logout" method="post">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+        </form>
     </div>
 </nav>
