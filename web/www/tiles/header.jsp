@@ -20,6 +20,10 @@
             </li>
             <li><a href="/create">Login Test</a></li>
 
+            <li>
+                <a href="/post/create">New Post</a>
+            </li>
+
             <sec:authorize access="hasRole('admin')">
                 <li>
                     <a href="/admin/adminhome">Admin</a>

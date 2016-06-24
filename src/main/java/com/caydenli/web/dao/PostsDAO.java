@@ -28,7 +28,7 @@ public class PostsDAO {
     @Transactional
     public boolean createPost(Post post) {
         BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(post);
-        return jdbc.update("insert into posts (subject, content, email, postdate)" +
-                "values (:subject, :content, :email, :postdate)",params) == 1;
+        return jdbc.update("insert into posts (subject, content, email, postdate, userId, posttype)" +
+                "values (:subject, :content, :email, :postdate, :userId, :posttype)",params) == 1;
     }
 }

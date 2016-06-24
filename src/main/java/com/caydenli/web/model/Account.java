@@ -33,6 +33,8 @@ public class Account {
     private String gender;
     private String authority;
 
+    private boolean enabled = false;
+
     public String getAuthority() {
         return authority;
     }
@@ -41,12 +43,9 @@ public class Account {
         this.authority = authority;
     }
 
-    private boolean enabled = false;
-
     public Account() {
     }
 
-    //    private GROUP groupname;
     private List<Post> posts = new ArrayList<Post>();
 
     public Account(String username, String password, String firstName, String lastName, String email, String phonenumber, String gender) {
@@ -57,7 +56,18 @@ public class Account {
         Email = email;
         this.phonenumber = phonenumber;
         this.gender = gender;
-//        this.groupname = groupname;
+    }
+
+    public Account(int id, String username, String password, String firstName, String lastName, String email, String phonenumber, String gender, boolean enabled) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        Email = email;
+        this.phonenumber = phonenumber;
+        this.gender = gender;
+        this.enabled = enabled;
     }
 
     public List<Subscription> getSubscription() {
@@ -76,13 +86,6 @@ public class Account {
         this.posts = posts;
     }
 
-//    public GROUP getGroupname() {
-//        return groupname;
-//    }
-//
-//    public void setGroupname(GROUP groupname) {
-//        this.groupname = groupname;
-//    }
 
     public String getGender() {
         return gender;
