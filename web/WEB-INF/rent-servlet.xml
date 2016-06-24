@@ -17,12 +17,11 @@
 
     <mvc:annotation-driven ignore-default-model-on-redirect="true"></mvc:annotation-driven>
 
-    <bean id="jspVR" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 
-        <property name="prefix" value="/www/jsps/"/>
-        <property name="suffix" value=".jsp"/>
-
-    </bean>
+    <!--<bean id="jspVR" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="prefix" value="/www/jsps/"/>-->
+        <!--<property name="suffix" value=".jsp"/>-->
+    <!--</bean>-->
 
     <!--Add external validation message properties-->
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
@@ -32,6 +31,17 @@
 
     <!--Map static resource to the page like css and javascript-->
     <mvc:resources mapping="/static/**" location="/www/resource/"></mvc:resources>
+
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+    </bean>
+
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/www/layout/layout.xml</value>
+            </list>
+        </property>
+    </bean>
 
 
 </beans>

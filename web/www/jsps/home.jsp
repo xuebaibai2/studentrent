@@ -6,9 +6,13 @@
 <head>
     <title>Home View</title>
     <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="container">
+
     <p><a href="/create">Login Test</a></p>
     <sec:authorize access="!isAuthenticated()">
         <p><a href="/login">Login</a></p>

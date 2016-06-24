@@ -29,6 +29,12 @@ public class HomeController {
     }
 
 
+    @RequestMapping(value = "/")
+    public String home(){
+        return "home";
+    }
+
+
     @RequestMapping(value = "/accessdenied")
     public String accessDenied(){
         return "accessdenied";
@@ -59,11 +65,11 @@ public class HomeController {
 //        return "redirect:home";
 //    }
 
-    @RequestMapping("/home")
-    public String showHome(Model model){
-        model.addAttribute("name","<pre>yanfeng li will success</pre>");
-        return "home";
-    }
+//    @RequestMapping("/home")
+//    public String showHome(Model model){
+//        model.addAttribute("name","<pre>yanfeng li will success</pre>");
+//        return "home";
+//    }
 
     @RequestMapping("/jndi")
     public String showJNDI(Model model){

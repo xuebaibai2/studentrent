@@ -33,6 +33,7 @@
         <!--<security:intercept-url pattern="/admin/**" access="hasRole('admin')" />-->
 
         <security:intercept-url pattern="/" access="permitAll" />
+        <security:intercept-url pattern="/test" access="permitAll" />
         <security:intercept-url pattern="/accessdenied" access="permitAll"/>
         <security:intercept-url pattern="/logout" access="permitAll" />
         <security:intercept-url pattern="/account/createaccount" access="permitAll" />
