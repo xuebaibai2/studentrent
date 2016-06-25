@@ -95,7 +95,7 @@ public class AccountsDAO {
                                 rs.getBoolean("enabled")
                         );
                     }
-                });
-
+                }
+        );
     }
 }

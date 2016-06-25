@@ -29,6 +29,7 @@
         <security:intercept-url pattern="/create" access="isAuthenticated()" />
         <security:intercept-url pattern="/createsuccess" access="isAuthenticated()" />
         <security:intercept-url pattern="/admin/**" access="permitAll" />
+        <security:intercept-url pattern="/post/post" access="permitAll"/>
         <security:intercept-url pattern="/post/**" access="hasAnyRole('admin','user')" />
         <!--<security:intercept-url pattern="/admin/**" access="hasRole('admin')" />-->
 

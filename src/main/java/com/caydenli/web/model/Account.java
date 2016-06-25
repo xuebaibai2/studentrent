@@ -58,6 +58,10 @@ public class Account {
         this.gender = gender;
     }
 
+    public Account(String username) {
+        this.username = username;
+    }
+
     public Account(int id, String username, String password, String firstName, String lastName, String email, String phonenumber, String gender, boolean enabled) {
         this.id = id;
         this.username = username;

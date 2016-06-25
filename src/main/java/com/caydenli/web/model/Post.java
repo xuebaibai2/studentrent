@@ -2,6 +2,9 @@ package com.caydenli.web.model;
 
 import com.caydenli.web.utility.POSTTYPE;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -12,7 +15,7 @@ public class Post {
     private String subject;
     private String content;
     private String email;
-    private Date postdate;
+    private Timestamp postdate;
     private boolean issticky;
     private int userId;
 
@@ -27,7 +30,8 @@ public class Post {
     public Post() {
     }
 
-    public Post(Account user, String posttype, String subject, String content, String email, Date postdate, boolean issticky) {
+    public Post(Account user, String posttype, String subject, String content, String email,
+                Timestamp postdate, boolean issticky, int id) {
 
         this.user = user;
         this.posttype = posttype;
@@ -36,6 +40,7 @@ public class Post {
         this.email = email;
         this.postdate = postdate;
         this.issticky = issticky;
+        this.id = id;
     }
 
     public int getId() {
@@ -86,11 +91,15 @@ public class Post {
         this.email = email;
     }
 
-    public Date getPostdate() {
+    public Timestamp getPostdate() {
         return postdate;
     }
 
-    public void setPostdate(Date postdate) {
+    public String getPostdate_display(){
+        return new SimpleDateFormat("yyyy-MM-dd").format(getPostdate());
+    }
+
+    public void setPostdate(Timestamp postdate) {
         this.postdate = postdate;
     }
 

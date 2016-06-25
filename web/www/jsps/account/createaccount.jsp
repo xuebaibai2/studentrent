@@ -2,15 +2,6 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<%--<html>--%>
-<%--<head>--%>
-    <%--<title>Create New Account</title>--%>
-    <%--<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">--%>
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>--%>
-    <%--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>--%>
-    <%--<script type="application/javascript" src="/static/js/js.js"></script>--%>
-<%--</head>--%>
-<%--<body>--%>
 <script type="application/javascript" src="/static/js/js.js"></script>
 <div class="container">
     <h3 class="text-center">Register new account</h3>
@@ -51,5 +42,3 @@
 
     </sf:form>
 </div>
-<%--</body>--%>
-<%--</html>--%>

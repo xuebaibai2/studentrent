@@ -59,5 +59,26 @@
         <put-attribute name="content" value="/www/jsps/post/create.jsp"></put-attribute>
     </definition>
 
+    <definition name="/post/post" extends="base.layout">
+        <put-attribute name="title" value="Rent Information"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/post/post.jsp"></put-attribute>
+    </definition>
+
+    <definition name="/post/mypost" extends="base.layout">
+        <put-attribute name="title" value="My Rent Information"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/post/mypost.jsp"></put-attribute>
+    </definition>
+
+    <definition name="/post/viewpost" extends="base.layout">
+        <put-attribute name="title" value="Rent Detail"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/post/viewpost.jsp"></put-attribute>
+    </definition>
+
+    <definition name="/post/update" extends="base.layout">
+        <put-attribute name="title" value="Update Post"></put-attribute>
+        <put-attribute name="script" value="/www/jsps/script/userRegisterScript.jsp"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/post/update.jsp"></put-attribute>
+    </definition>
+
 </tiles-definitions>
 
