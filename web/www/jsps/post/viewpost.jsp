@@ -23,7 +23,11 @@
     </tr>
     <tr>
         <td>User:</td>
-        <td><c:out value="${post.user.username}"></c:out></td>
+        <td>
+            <a href="${pageContext.request.contextPath}/account/user/${post.user.username}">
+                <c:out value="${post.user.username}"></c:out>
+            </a>
+        </td>
     </tr>
     <tr>
         <td>Posted:</td>

@@ -27,16 +27,20 @@
 
         <security:intercept-url pattern="/create" access="isAuthenticated()" />
         <security:intercept-url pattern="/createsuccess" access="isAuthenticated()" />
+        <security:intercept-url pattern="/account/createaccount" access="permitAll" />
         <security:intercept-url pattern="/admin/**" access="permitAll" />
         <security:intercept-url pattern="/post/post" access="permitAll"/>
         <security:intercept-url pattern="/post/**" access="hasAnyRole('admin','user')" />
+        <!--<security:intercept-url pattern="/account/user" access="permitAll" />-->
+        <security:intercept-url pattern="/account/**" access="hasAnyRole('admin','user')" />
+
         <!--<security:intercept-url pattern="/admin/**" access="hasRole('admin')" />-->
 
         <security:intercept-url pattern="/" access="permitAll" />
         <security:intercept-url pattern="/test" access="permitAll" />
         <security:intercept-url pattern="/accessdenied" access="permitAll"/>
         <security:intercept-url pattern="/logout" access="permitAll" />
-        <security:intercept-url pattern="/account/createaccount" access="permitAll" />
+
         <security:intercept-url pattern="/welcome" access="permitAll" />
         <security:intercept-url pattern="/favicon.ico" access="permitAll" />
         <security:intercept-url pattern="/static/**" access="permitAll" />
@@ -46,7 +50,8 @@
         <security:intercept-url pattern="/**" access="denyAll" />
 
         <!--Access Denied Redirect Page-->
-        <security:access-denied-handler error-page="/denied"/>
+        <security:access-denied-handler error-page="/accessdenied"/>
+
 
         <!--Configure Remember Me-->
         <security:remember-me key="rentKey" user-service-ref="jdbcUserService"/>

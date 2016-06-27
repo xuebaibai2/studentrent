@@ -4,8 +4,9 @@ package com.caydenli.web.utility;
  * Created by Cayden on 16/6/20.
  */
 public enum POSTTYPE {
-    RENTIN("Looking for room"),
-    RENTOUT("Looking for flatmate");
+    LookForRoom("Looking for room"),
+    LookForFlatmate("Looking for flatmate"),
+    RoomAvailable("Room for renting");
 
     private String label;
     private POSTTYPE(String label){

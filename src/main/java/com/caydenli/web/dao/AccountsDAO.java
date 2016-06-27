@@ -11,6 +11,7 @@ import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.security.crypto.keygen.StringKeyGenerator;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -97,5 +98,19 @@ public class AccountsDAO {
                     }
                 }
         );
+    }
+
+    public List<String> getUserAuthorityByName(String name) {
+        return jdbc.queryForList("select authority from userauth where username = :name",
+                new MapSqlParameterSource("name",name),String.class);
+    }
+
+
+    public boolean updateUser(Account account) {
+        BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(account);
+        return jdbc.update("update accounts " +
+                "set firstName = :firstName, lastName = :lastName, Email = :Email, phonenumber= :phonenumber, " +
+                "gender = :gender " +
+                "where id = :id",params) == 1;
     }
 }

@@ -38,7 +38,7 @@
     <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <property name="definitions">
             <list>
-                <value>/www/layout/layout.xml</value>
+                <value>/www/layoutxml/layout.xml</value>
             </list>
         </property>
     </bean>

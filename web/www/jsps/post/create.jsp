@@ -32,7 +32,7 @@
 
         <%--Email--%>
         <label for="email">Email: </label>
-        <sf:input id="email" class="form-control" path="email"/>
+        <sf:input id="email" class="form-control" placeholder="Leave empty to use registered email" path="email"/>
         <div class="alert alert-danger alert-dismissable fade in">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
             <p><sf:errors path="Email" cssClass="text-danger"/></p>

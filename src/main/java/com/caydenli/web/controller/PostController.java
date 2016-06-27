@@ -4,6 +4,7 @@ import com.caydenli.web.model.Account;
 import com.caydenli.web.model.Post;
 import com.caydenli.web.service.AccountsService;
 import com.caydenli.web.service.PostsService;
+import com.caydenli.web.utility.POSTTYPE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -38,7 +39,6 @@ public class PostController {
     public String createPost(Model model){
 
         model.addAttribute("typeList", getRentType());
-
         model.addAttribute("post",new Post());
         return "/post/create";
     }
@@ -49,9 +49,11 @@ public class PostController {
         if (result.hasErrors()){
             return "/post/create";
         }
+        Account author = accountsService.getUserByUsername(principal.getName());
+        post.setEmail(post.getEmail() == "" ? author.getEmail() : post.getEmail());
         post.setPostdate(new Timestamp(System.currentTimeMillis()));
-        String username = principal.getName();
-        Account author = accountsService.getUserByUsername(username);
+
+
         post.setUserId(author.getId());
         if(postsService.createPost(post)){
             return "redirect:/home";
@@ -76,8 +78,7 @@ public class PostController {
 
     @RequestMapping(value = "/update/{id}", method = RequestMethod.GET)
     public String updatePost(@PathVariable("id") String id, Model model, Principal principal){
-        String username = principal.getName();
-        Post post = postsService.getPostByIdandUserName(id,username);
+        Post post = postsService.getPostByIdandUserName(id,principal.getName());
         if (post == null){
             return "redirect:/home";
         }
@@ -93,8 +94,7 @@ public class PostController {
         }
         post.setPostdate(new Timestamp(System.currentTimeMillis()));
 
-        boolean updated = postsService.updatePost(post);
-        if (updated){
+        if (postsService.updatePost(post)){
             return "redirect:/post/post/"+post.getId();
         }else {
             return "redirect:/post/update/"+post.getId();
@@ -118,6 +118,11 @@ public class PostController {
     }
 
     private List<String> getRentType(){
-        return new ArrayList<String>(Arrays.asList("Looking for room", "Looking for flatmate"));
+        POSTTYPE.LookForFlatmate.getLabel();
+        return new ArrayList<String>(Arrays.asList(
+                POSTTYPE.LookForRoom.getLabel(),
+                POSTTYPE.LookForFlatmate.getLabel(),
+                POSTTYPE.RoomAvailable.getLabel()
+        ));
     }
 }

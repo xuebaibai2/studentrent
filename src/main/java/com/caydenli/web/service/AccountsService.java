@@ -29,12 +29,21 @@ public class AccountsService {
         return  accountsDAO.userEmailExist(email);
     }
 
-    @Secured("ROLE_admin")
+    @Secured({"ROLE_admin","ROLE_user"})
     public List<Account> getAllAccounts() {
         return accountsDAO.getAllUsers();
     }
 
     public Account getUserByUsername(String username) {
         return accountsDAO.getUserByUsername(username);
+    }
+
+    public List<String> getUserAuthorityByName(String name) {
+        return accountsDAO.getUserAuthorityByName(name);
+    }
+
+
+    public boolean updateUser(Account account) {
+        return accountsDAO.updateUser(account);
     }
 }

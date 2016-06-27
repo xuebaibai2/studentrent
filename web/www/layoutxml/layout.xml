@@ -23,6 +23,11 @@
         <put-attribute name="content" value="/www/jsps/accessdenied.jsp"></put-attribute>
     </definition>
 
+    <definition name="/denied" extends="base.layout">
+        <put-attribute name="title" value="Error"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/accessdenied.jsp"></put-attribute>
+    </definition>
+
     <definition name="welcome" extends="base.layout">
         <put-attribute name="title" value="Welcome"></put-attribute>
         <put-attribute name="content" value="/www/jsps/welcome.jsp"></put-attribute>
@@ -44,6 +49,16 @@
         <put-attribute name="title" value="Register new user"></put-attribute>
         <put-attribute name="script" value="/www/jsps/script/userRegisterScript.jsp"></put-attribute>
         <put-attribute name="content" value="/www/jsps/account/createaccount.jsp"></put-attribute>
+    </definition>
+
+    <definition name="/account/user" extends="base.layout">
+        <put-attribute name="title" value="User Information"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/account/user.jsp"></put-attribute>
+    </definition>
+
+    <definition name="/account/update" extends="base.layout">
+        <put-attribute name="title" value="Update User Information"></put-attribute>
+        <put-attribute name="content" value="/www/jsps/account/update.jsp"></put-attribute>
     </definition>
 
     <!--Admin Dir-->
