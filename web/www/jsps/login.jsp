@@ -22,9 +22,9 @@
         <span class="text-danger">Login failed, username or password is not correct</span>
     </c:if>
 
-    <c:url value="/login" var="loginUrl"/>
+    <%--<c:url value="/login" var="loginUrl"/>--%>
 
-    <form name='f' action=${loginUrl} method='POST'>
+    <form name='f' action="${pageContext.request.contextPath}/login" method='POST'>
 
 
         <label for="username">User:</label>
@@ -38,6 +38,6 @@
         <br>
         <input class="form-control btn btn-primary" name="submit" type="submit" value="Login"/>
     </form>
-    <p><a class="btn btn-success" href="/account/createaccount">Create new account</a></p>
+    <p><a class="btn btn-success" href="${pageContext.request.contextPath}/account/createaccount">Create new account</a></p>
 </div>
 

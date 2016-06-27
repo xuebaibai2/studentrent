@@ -4,10 +4,8 @@
 
 <div class="container">
 
-    <p><a href="/create">Login Test</a></p>
-
     <sec:authorize access="hasRole('admin')">
-        <p><a href="/admin/adminhome">Admin</a></p>
+        <p><a href="${pageContext.request.contextPath}/admin/adminhome">Admin</a></p>
     </sec:authorize>
 
 </div>

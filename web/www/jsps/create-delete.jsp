@@ -12,7 +12,7 @@
     <title>Create</title>
 </head>
 <body>
-<sf:form method="post" action="/createsuccess" commandName="offer">
+<sf:form method="post" action="${pageContext.request.contextPath}/createsuccess" commandName="offer">
     Name: <sf:input path="name"></sf:input> &nbsp;&nbsp; <sf:errors path="name" cssStyle="color: #ff512e;"></sf:errors> <br>
     Mail: <sf:input path="email"></sf:input> <br>
     Text: <sf:textarea path="text" ></sf:textarea> <br>

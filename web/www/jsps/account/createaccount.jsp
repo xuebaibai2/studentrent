@@ -2,10 +2,10 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<script type="application/javascript" src="/static/js/js.js"></script>
+<%--<script type="application/javascript" src="${pageContext.request.contextPath}/static/js/js.js"></script>--%>
 <div class="container">
     <h3 class="text-center">Register new account</h3>
-    <sf:form id="create_form" method="post" action="/account/createaccount" commandName="account">
+    <sf:form id="create_form" method="post" action="${pageContext.request.contextPath}/account/createaccount" commandName="account">
         <label for="username">Username: </label>
         <sf:input id="username" class="form-control" path="username"/>
         <div class="alert alert-danger alert-dismissable fade in">

@@ -4,7 +4,7 @@
 
 
 <c:if test="${isAuthor}">
-    <a class="btn btn-sm btn-default" href="/post/update/${post.id}">Edit Post</a>
+    <a class="btn btn-sm btn-default" href="${pageContext.request.contextPath}/post/update/${post.id}">Edit Post</a>
 </c:if>
 <table class="table table-view">
     <tr>

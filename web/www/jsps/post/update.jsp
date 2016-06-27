@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <h3 class="text-center">Update Post</h3>
-<sf:form method="post" action="/post/update/${post.id}" commandName="post">
+<sf:form method="post" action="${pageContext.request.contextPath}/post/update/${post.id}" commandName="post">
 
     <label for="subject">Subject: </label>
     <sf:input class="form-control" id="subject" path="subject"/>
